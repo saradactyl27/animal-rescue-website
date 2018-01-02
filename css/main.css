@@ -20,14 +20,33 @@ header {
 
 nav li {
   display: inline-block;
+  background-color: white;
+  color: black;
+  margin-right: 20px;
+  padding: 6px;
+  border-radius: 10px;
+
+}
+
+nav li:hover {
+  border: 5px solid rgb(1, 82, 120);
+  padding: 1px 11px 1px 11px;
 }
 
 a {
   text-decoration: none;
+  color: black;
 }
+
 
 .logo {
   max-width: 200px;
+}
+
+.cards-section {
+  max-width: 1500px;
+  margin: auto;
+
 }
 
 .card-img {
@@ -36,13 +55,18 @@ a {
   overflow: hidden;
 }
 
-.cards {
+.card {
   width: 15em;
   background-color: #99ddff;
   border-radius: 5px;
   text-align: left;
   padding: 20px;
   margin: auto;
+}
+
+.card:hover {
+  border: 5px solid rgb(1, 82, 120);
+  padding: 15px;
 }
 
 .card-text {
@@ -72,6 +96,18 @@ a {
 
 .absolute {
   position: absolute;
-  bottom: 6px;
+  bottom: 10px;
   left: 0;
+}
+
+.about {
+  background-color: #99ddff;
+  padding: 20px;
+  padding-top: 40px;
+  margin-top: 40px;
+}
+
+.about-content {
+  max-width: 1200px;
+  margin: auto;
 }
