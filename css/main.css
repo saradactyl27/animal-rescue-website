@@ -6,8 +6,12 @@ body {
   margin: 0;
 }
 
-h1, h2, h3 {
+h1, h2, h3, a {
   font-family: Verdana, sans-serif;
+}
+
+body {
+  background-color: rgb(203, 231, 244);
 }
 
 header {
@@ -18,20 +22,56 @@ nav li {
   display: inline-block;
 }
 
+a {
+  text-decoration: none;
+}
+
 .logo {
   max-width: 200px;
 }
 
 .card-img {
   width: 100%;
+  height: 250px;
+  overflow: hidden;
 }
 
 .cards {
   width: 15em;
+  background-color: #99ddff;
+  border-radius: 5px;
+  text-align: left;
+  padding: 20px;
+  margin: auto;
+}
+
+.card-text {
+  color: black;
+
 }
 
 .banner-img {
   width: 100%;
   height: 30em;
   overflow-y: hidden;
+  transform: scaleX(-1);
+}
+
+.banner-content {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+}
+
+.banner-content, .banner-btn {
+  color: white;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+  bottom: 6px;
+  left: 0;
 }
