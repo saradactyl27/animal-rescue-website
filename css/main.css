@@ -20,17 +20,24 @@ header {
 
 nav li {
   display: inline-block;
-  background-color: white;
   color: black;
   margin: 5px;
   padding: 10px;
-  border-radius: 10px;
 
 }
 
-nav li:hover {
+.btn-light:hover {
   border: 5px solid rgb(1, 82, 120);
-  padding: 5px;
+  padding: 2px 8px;
+  background-color: white;
+
+}
+
+.btn-light {
+  background-color: white;
+  border-radius: 10px;
+  border: none;
+
 }
 
 a {
