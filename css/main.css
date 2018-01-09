@@ -29,9 +29,9 @@ nav li {
 }
 
 .btn-light:hover {
-  border: 5px solid rgb(1, 82, 120);
+  border: 5px solid rgb(0, 0, 0, 0);
   padding: 2px 8px;
-  background-color: white;
+  background-color: #9df;
 
 }
 
@@ -149,4 +149,6 @@ button {
 .apply-btn:hover {
   color: black;
   padding: 6px 35px;
+  border: 5px solid rgb(0, 0, 0, 0);
+
 }
