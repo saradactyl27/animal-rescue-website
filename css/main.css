@@ -53,7 +53,7 @@ a:hover {
 }
 
 .card {
-  width: 15em;
+  width: 18em;
   background-color: #9df;
   border-radius: 5px;
   text-align: left;
@@ -111,7 +111,7 @@ a:hover {
 }
 
 .animal-card {
-  width: 15em;
+  width: 18em;
   border-radius: 5px;
   text-align: left;
   padding: 30px;
