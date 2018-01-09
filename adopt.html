@@ -2,12 +2,14 @@
 <html lang="en-ca">
 <head>
   <meta charset="utf-8">
-  <title>Animal Rescue Website</title>
+  <title>Adoption form</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="css/modules.css" rel="stylesheet">
   <link href="css/grid.css" rel="stylesheet">
   <link href="css/type.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="/favicon-196.png">
 </head>
 <body>
 
@@ -16,84 +18,63 @@
     <li><a href="#nav">Jump to navigation</a></li>
   </ul>
 
-  <header class="grid" role="banner">
+  <header class="grid push-2" role="banner">
     <div class="unit xs-1 s-1 m-2-3 l-2-3 push">
       <img class="logo gutter-2 pad-t" src="images/icon.svg" alt="">
     </div>
 
     <nav id="nav" class="unit xs-1 s-1 m-1-3 l-1-3 push pad-t-2" role="navigation" tabindex="0">
       <ul class="list-group-inline">
-        <li class="gutter-1-2 btn btn-light"><a class="" href="index.html">Home</a></li>
-        <li class="gutter-1-2 btn btn-light"><a class="" href="index.html#about">About</a></li>
-        <li class="gutter-1-2 btn btn-light"><a class="" href="rescues.html">Rescues</a></li>
-        <li class="gutter-1-2 btn btn-light"><a class="" href="adopt.html">Adopt</a></li>
+        <li class="gutter-1-2 btn btn-light"><a href="index.html">Home</a></li>
+        <li class="gutter-1-2 btn btn-light"><a href="index.html#about">About</a></li>
+        <li class="gutter-1-2 btn btn-light"><a href="rescues.html">Rescues</a></li>
+        <li class="gutter-1-2 btn btn-light"><a href="adopt.html">Adopt</a></li>
       </ul>
     </nav>
 
   </header>
 
   <main id="main" role="main" tabindex="0">
-    <form class="push-0 gutter">
+    <div class="grid">
+      <div class="unit xs-1-3 s-1-3 m-1-3 l-1-3 embed embed-1by1 adopt-img">
+        <img class="embed-item img-flex" src="images/black-dog.jpg" alt="">
+      </div>
+      <div class="unit xs-1-3 s-1-3 m-1-3 l-1-3 embed embed-1by1 adopt-img">
+        <img class="embed-item img-flex" src="images/meow-cat.jpg" alt="">
+      </div>
+      <div class="unit xs-1-3 s-1-3 m-1-3 l-1-3 embed embed-1by1 adopt-img">
+        <img class="embed-item img-flex" src="images/grey-dog.jpg" alt="">
+      </div>
+    </div>
+
+    <section>
+      <form class="push-0 gutter pad-t" action="thanks.html">
+        <h1 class="text-center">Adoption Application</h1>
 
         <fieldset>
-          <legend class="push pad-b-1-4 giga">Personal details</legend>
+          <legend class="push-1-2 giga gutter-1-2">Personal details</legend>
           <div class="grid">
-            <div class="push-1-4 unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 ">
+            <div class="push-1-4 unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 gutter-1-2">
               <label for="name">Full name</label>
               <input id="name" name="name">
-              <p class="italic micro">Your full legal name, for insurance purposes, e.g. “Elizabeth Bradley”.</p>
             </div>
-            <div class="push-1-4 unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
-              <label for="nickname">What should we call you?</label>
-              <input id="nickname" name="nickname">
-              <p class="italic micro">What all your friends call you, e.g. “Liz”.</p>
+            <div class="push-1-4 unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 gutter-1-2">
+              <label for="partner-name">Partner's Name (optional)</label>
+              <input id="partner-name" name="partner-name">
             </div>
-            <div class="push unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
-              <label for="dob">Date of birth</label>
-              <input id="dob" type="date" name="date">
+            <div class="push-1-4 unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 gutter-1-2">
+              <label for="address">Address</label>
+              <input id="address" name="address">
             </div>
-            <div class="push unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
-              <label for="shirt-size">T-shirt size</label>
-              <select id="shirt-size" name="shirt-size">
-                <option value="">Select a t-shirt size</option>
-                <option>Fitted: XS</option>
-                <option>Fitted: S</option>
-                <option>Fitted: M</option>
-                <option>Fitted: L</option>
-                <option>Fitted: XL</option>
-                <option>Straight-cut: XS</option>
-                <option>Straight-cut: S</option>
-                <option>Straight-cut: M</option>
-                <option>Straight-cut: L</option>
-                <option>Straight-cut: XL</option>
-              </select>
-            </div>
-            <div class="push unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
-              <label for="email">Email</label>
-              <input id="email" type="email" name="email">
-            </div>
-            <div class="push unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
-              <label for="number">Phone number (optional)</label>
-              <input id="number" type="tel" name="number">
-            </div>
-          </div>
-        </fieldset>
-
-        <hr>
-
-        <fieldset>
-          <legend class="giga push pad-t pad-b-1-2">Address</legend>
-          <div class="grid">
-
-            <div class="push pad-b-1-2 unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
-              <label for="street">Street address</label>
-              <input id="street" name="street">
-            </div>
-            <div class="push pad-b-1-2 unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
+            <div class="push-1-4 unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 gutter-1-2">
               <label for="city">City</label>
               <input id="city" name="city">
             </div>
-            <div class="push pad-b-1-2 unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
+            <div class="push-1-4 unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 gutter-1-2">
+              <label for="postal-code">Postal Code</label>
+              <input id="postal-code" name="postal-code">
+            </div>
+            <div class="push pad-b-1-2 unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 gutter-1-2">
               <label for="province">Province</label>
               <select id="province" name="province">
                 <option value="">Select a province</option>
@@ -112,9 +93,21 @@
                 <option>Yukon</option>
               </select>
             </div>
-            <div class="push pad-b-1-2 unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
-              <label for="postal-code">Postal code</label>
-              <input id="postal-code" name="postal-code">
+            <div class="push unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 gutter-1-2">
+              <label for="number-1"> Primary Phone number</label>
+              <input id="number-1" type="number" name="primary-number">
+            </div>
+            <div class="push unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 gutter-1-2">
+              <label for="number-2">Secondary Phone number</label>
+              <input id="number-2" type="number" name="secondary-number">
+            </div>
+            <div class="push unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 gutter-1-2">
+              <label for="email">Email</label>
+              <input id="email" type="email" name="email">
+            </div>
+            <div class="push unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 gutter-1-2">
+              <label for="dob">Date of birth</label>
+              <input id="dob" type="date" name="date">
             </div>
           </div>
         </fieldset>
@@ -122,160 +115,85 @@
         <hr>
 
         <fieldset>
+          <legend class="push-1-2 giga gutter-1-2">Your Home</legend>
           <div class="grid">
-
-            <label class="giga bold push pad-t-1-2 unit">What activities are you interested in helping with?</label>
-            <div class="unit xs-1 s-1">
-
-              <div class="grid">
-                <div class="push-1-4 unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
-                  <input id="digging" type="checkbox" name="digging">
-                  <label for="digging">Digging holes</label>
-                </div>
-
-                <div class="push-1-4 unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
-                  <input id="dirty" type="checkbox" name="dirty">
-                  <label for="dirty">Getting Dirty</label>
-                </div>
-
-                <div class="push-1-4 unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
-                  <input id="lifting" type="checkbox" name="lifting">
-                  <label for="lifting">Lifting heavy objects</label>
-                </div>
-
-                <div class="push-1-4 unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
-                  <input id="driving" type="checkbox" name="driving">
-                  <label for="driving">Driving people</label>
-                </div>
-
-                <div class="push-1-4 unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
-                  <input id="transporting" type="checkbox" name="transporting">
-                  <label for="transporting">Transporting trees</label>
-                </div>
-
-                <div class="push-1-4 unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
-                  <input id="photos" type="checkbox" name="photos">
-                  <label for="photos">Taking photos</label>
-                </div>
-
-                <div class="push-1-4 unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
-                  <input id="publishing" type="checkbox" name="publishing">
-                  <label for="publishing">Online publishing</label>
-                </div>
-
-                <div class="push-2 unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
-                  <input id="managing" type="checkbox" name="managing">
-                  <label for="managing">Managing people</label>
-                </div>
-              </div>
-
+            <label class="bold push-1-2 unit xs-1 s-1 m-1 l-1 xl-1 gutter-1-2">What kind of home do you live in?</label>
+            <div class="push-2 unit xs-1-3 s-1-3 m-1-4 l-1-4 xl-1-6 gutter-1-2">
+              <input class="radio" id="apartment-condo" type="radio" name="home-type">
+              <label for="apartment-condo">Apartment/Condo</label>
             </div>
-
-            <label class="giga bold push unit">Do you have any experience with the following?</label>
-            <div class="unit xs-1">
-
-              <div class="grid">
-                <div class="push-1-4 unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
-                  <input id="shovels" type="checkbox" name="shovels">
-                  <label for="shovels">Shovels</label>
-                </div>
-
-                <div class="push-1-4 unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
-                  <input id="gps" type="checkbox" name="gps">
-                  <label for="gps">Hand-held GPS</label>
-                </div>
-
-                <div class="push-1-4 unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
-                  <input id="writing" type="checkbox" name="writing">
-                  <label for="writing">Writign & blogging</label>
-                </div>
-
-                <div class="push-1-4 unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
-                  <input id="photography" type="checkbox" name="photography">
-                  <label for="photography">Photography</label>
-                </div>
-
-                <div class="push-1-4 unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
-                  <input id="climbing" type="checkbox" name="climbing">
-                  <label for="climbing">Trail & hill climbing</label>
-                </div>
-
-                <div class="push-1-4 unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
-                  <input id="bush-craft" type="checkbox" name="bush-craft">
-                  <label for="bush-craft">Bush craft</label>
-                </div>
-
-                <div class="push-1-4 unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
-                  <input id="atv" type="checkbox" name="atv">
-                  <label for="atv">ATVs</label>
-                </div>
-
-                <div class="push-1-4 unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
-                  <input id="identification" type="checkbox" name="identification">
-                  <label for="identification">Plant identification</label>
-                </div>
-
-                <div class="push-1-4 unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
-                  <input id="event-planning" type="checkbox" name="event-planning">
-                  <label for="event-planning">Secial event planning</label>
-                </div>
-
-                <div class="push unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
-                  <input id="speaking" type="checkbox" name="speaking">
-                  <label for="speaking">Speaking to groups</label>
-                </div>
-              </div>
+            <div class="push-2 unit xs-1-3 s-1-3 m-1-4 l-1-4 xl-1-6 gutter-1-2">
+              <input class="radio" id="house" type="radio" name="home-type">
+              <label for="house">House</label>
+            </div>
+            <div class="push-2 unit xs-1-3 s-1-3 m-1-4 l-1-4 xl-1-6 gutter-1-2">
+              <input class="radio" id="acreage" type="radio" name="home-type">
+              <label for="acreage">Acreage</label>
+            </div>
+            <label class="bold push-1-2 unit xs-1 s-1 m-1 l-1 xl-1 gutter-1-2">Do you rent or own?</label>
+            <div class="push-2 unit xs-1-3 s-1-3 m-1-4 l-1-4 xl-1-6 gutter-1-2">
+              <input id="own" type="radio" name="rent-own">
+              <label for="own">Own</label>
+            </div>
+            <div class="push-2 unit xs-1-3 s-1-3 m-1-4 l-1-4 xl-1-6 gutter-1-2">
+              <input id="rent" type="radio" name="rent-own">
+              <label for="rent">Rent</label>
+            </div>
+            <label class="bold push-1-2 unit xs-1 s-1 m-1 l-1 xl-1 gutter-1-2">What type of yard do you have?</label>
+            <div class="push-2 unit xs-1-3 s-1-3 m-1-4 l-1-4 xl-1-6 gutter-1-2">
+              <input id="fenced" type="radio" name="yard">
+              <label for="fenced">Fenced</label>
+            </div>
+            <div class="push-2 unit xs-1-3 s-1-3 m-1-4 l-1-4 xl-1-6 gutter-1-2">
+              <input id="unfenced" type="radio" name="yard">
+              <label for="unfenced">Unfenced</label>
+            </div>
+            <div class="push-2 unit xs-1-3 s-1-3 m-1-4 l-1-4 xl-1-6 gutter-1-2">
+              <input id="no-yard" type="radio" name="yard">
+              <label for="no-yard">No Yard</label>
+            </div>
+            <label class="bold push-1-2 unit xs-1 s-1 m-1 l-1 xl-1 gutter-1-2">On average how many hours will your pet be alone?</label>
+            <div class="push unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 gutter-1-2">
+              <label for="weekdays">Weekdays</label>
+              <input id="weekdays" type="number" name="days">
+            </div>
+            <div class="push unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 gutter-1-2">
+              <label for="weekends">Weekends</label>
+              <input id="weekends" type="number" name="days">
+            </div>
+            <label class="bold push-1-2 unit xs-1 s-1 m-1 l-1 xl-1 gutter-1-2">Are there any other pets in tyes</label>
+            <div class="push unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 gutter-1-2">
+              <input id="yes-1" type="radio" name="other-pets">
+              <label for="yes-1">Yes</label>
+            </div>
+            <div class="push unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 gutter-1-2">
+              <input id="no-1" type="radio" name="other-pets">
+              <label for="no-1">No</label>
+            </div>
+            <div class="push unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 gutter-1-2">
+              <label class="bold">How many adults live in your home?</label>
+              <input id="adults" type="number" name="adults">
+            </div>
+            <div class="push-1-2 unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 gutter-1-2">
+              <label class="bold">How many children live in your home?</label>
+              <input id="children" type="number" name="children">
             </div>
           </div>
         </fieldset>
 
         <hr>
 
-        <div class="grid">
-          <label class="giga bold push-1-2 pad-t unit xs-1 s-1 m-1 l-1 xl-1">Do you have a valid driver's licence?</label>
-          <div class="push-2 unit xs-1-3 s-1-3 m-1-4 l-1-4 xl-1-6">
-            <input id="yes-1" type="radio" name="yes-1">
-            <label for="yes-1">Yes</label>
-          </div>
-          <div class="push-2 unit xs-1-3 s-1-3 m-1-4 l-1-4 xl-1-6">
-            <input id="no-1" type="radio" name="no-1">
-            <label for="no-1">No</label>
-          </div>
-
-          <label class="giga bold push-1-2 pad-t-1-2 unit xs-1 s-1 m-1 l-1 xl-1">Do you have a pick-up truck you'd be willing to use?</label>
-          <div class="push-2 unit xs-1-3 s-1-3 m-1-4 l-1-4 xl-1-6">
-            <input id="yes-2" type="radio" name="yes-2">
-            <label for="yes-2">Yes</label>
-          </div>
-          <div class="push-2 unit xs-1-3 s-1-3 m-1-4 l-1-4 xl-1-6">
-            <input id="no-2" type="radio" name="no-2">
-            <label for="no-2">No</label>
-          </div>
-
-          <label class="giga bold push-1-2 pad-t-1-2 unit xs-1 s-1 m-1 l-1 xl-1">Do you have up-to-date first-aid certification?</label>
-          <div class="push-2 unit xs-1-3 s-1-3 m-1-4 l-1-4 xl-1-6">
-            <input id="yes-3" type="radio" name="yes-3">
-            <label for="yes-3">Yes</label>
-          </div>
-          <div class="push-2 unit xs-1-3 s-1-3 m-1-4 l-1-4 xl-1-6">
-            <input id="no-3" type="radio" name="no-3">
-            <label for="no-3">No</label>
-          </div>
-        </div>
-
-        <hr>
-        <div class="push-2 pad-t unit xs-1 s-1 m-1 l-1 xl-1">
-          <label class="push-1-2 giga bold" for="comments">Please let us know any comments or questions you may have.</label>
-          <textarea id="comments" name="comments"></textarea>
-        </div>
-
-        <hr>
-
         <div class="push unit-content-center">
-          <button type="submit">Apply</button>
+          <button class="apply-btn btn-light" type="submit">Apply</button>
         </div>
       </form>
+    </section>
 
   </main>
 
+  <footer class="gutter pad-t" role="contentinfo">
+    <p class="milli">© 2018 Lakefield Animal Welfare Society</p>
+  </footer>
+
 </body>
+</html>

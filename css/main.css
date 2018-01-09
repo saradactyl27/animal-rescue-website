@@ -2,10 +2,6 @@ html {
   font-family: Georgia, serif;
 }
 
-body {
-  margin: 0;
-}
-
 h1, h2, h3, a {
   font-family: Verdana, sans-serif;
 }
@@ -15,7 +11,7 @@ body {
 }
 
 header {
-  background-color: #99ddff;
+  background-color: #9df;
 }
 
 nav li {
@@ -26,17 +22,16 @@ nav li {
 
 }
 
-.btn-light:hover {
-  border: 5px solid rgb(1, 82, 120);
-  padding: 2px 8px;
-  background-color: white;
-
-}
-
 .btn-light {
   background-color: white;
   border-radius: 10px;
   border: none;
+}
+
+.btn-light:hover {
+  border: 5px solid rgb(1, 82, 120);
+  padding: 2px 8px;
+  background-color: white;
 
 }
 
@@ -55,7 +50,7 @@ a {
 
 .card {
   width: 15em;
-  background-color: #99ddff;
+  background-color: #9df;
   border-radius: 5px;
   text-align: left;
   padding: 20px;
@@ -98,9 +93,8 @@ a {
 }
 
 .about {
-  background-color: #99ddff;
-  padding: 20px;
-  padding-top: 40px;
+  background-color: #9df;
+  padding: 50px 0;
   margin-top: 40px;
 }
 
@@ -116,7 +110,7 @@ a {
   width: 15em;
   border-radius: 5px;
   text-align: left;
-  padding: 20px;
+  padding: 30px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -128,6 +122,13 @@ a {
 
 .animal-card-text {
   color: black;
+}
+
+.embed-1by1 {
+  width: 15em;
+  height: 15em;
+  padding-top: 20%;
+  margin: auto;
 }
 
 fieldset {
@@ -143,4 +144,9 @@ button {
   background-color: #6e8c62;
   border-color: #6e8c62;
   padding: .5rem 2rem;
+}
+
+.apply-btn:hover {
+  color: black;
+  padding: 6px 35px;
 }
