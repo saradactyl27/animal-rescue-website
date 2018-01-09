@@ -19,25 +19,29 @@ nav li {
   color: black;
   margin: 5px;
   padding: 10px;
-
 }
 
 .btn-light {
   background-color: white;
   border-radius: 10px;
   border: none;
+  color: black;
+
 }
 
 .btn-light:hover {
-  border: 5px solid rgb(0, 0, 0, 0);
+  border: 5px solid rgb(1, 82, 120);
   padding: 2px 8px;
   background-color: #9df;
-
 }
 
 a {
   text-decoration: none;
   color: black;
+}
+
+a:hover {
+  color: white;
 }
 
 .cards-section {
@@ -147,8 +151,8 @@ button {
 }
 
 .apply-btn:hover {
-  color: black;
+  color: #9df;
   padding: 6px 35px;
-  border: 5px solid rgb(0, 0, 0, 0);
+  border: 5px solid rgb(1, 82, 120);
 
 }
